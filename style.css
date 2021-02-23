@@ -19,30 +19,46 @@
   grid-gap: 10px 20px;
 
   /* content size and format */
+  /* justify-content: start, center, end, stretch, etc */
+  justify-content: center;
+  /* vertically align-items: start, center, end, stretch, etc */
+  align-items: center;
 }
 
+/* individually align items with align-self */
 .grid-item-1 {
   border: 1px solid black;
+  align-self: start;
 }
 
+/* individually align items with align-self */
 .grid-item-2 {
   border: 1px solid black;
+  align-self: center;
 }
 
+/* individually align items with align-self */
 .grid-item-3 {
   border: 1px solid black;
+  align-self: end;
 }
 
+/* individually align items with align-self */
 .grid-item-4 {
   border: 1px solid black;
+  align-self: stretch;
 }
 
+/* individually align items with align-self */
 .grid-item-5 {
   border: 1px solid black;
+  align-self: baseline;
 }
 
+/* individually align items with align-self */
 .grid-item-6 {
   border: 1px solid black;
+  align-self: end;
 }
 
 .flex-container {
