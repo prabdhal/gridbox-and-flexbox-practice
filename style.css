@@ -1,3 +1,73 @@
-h1 {
-  color: green;
+.grid-container {
+  display: grid;
+
+  /* 1. manual grid setup */
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 75px 75px;
+
+  /* 2. repeat columns and rows */
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+
+  /* 3. repeat with minmax columns and rows */
+  grid-template-columns: repeat(3, minmax(100px, auto));
+  grid-template-rows: repeat(2, minmax(1fr, auto));
+
+  /* grid gap columns/rows/all */
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  grid-gap: 10px 20px;
+
+  /* content size and format */
+}
+
+.grid-item-1 {
+  border: 1px solid black;
+}
+
+.grid-item-2 {
+  border: 1px solid black;
+}
+
+.grid-item-3 {
+  border: 1px solid black;
+}
+
+.grid-item-4 {
+  border: 1px solid black;
+}
+
+.grid-item-5 {
+  border: 1px solid black;
+}
+
+.grid-item-6 {
+  border: 1px solid black;
+}
+
+.flex-container {
+}
+
+.flex-item-1 {
+  border: 1px solid black;
+}
+
+.flex-item-2 {
+  border: 1px solid black;
+}
+
+.flex-item-3 {
+  border: 1px solid black;
+}
+
+.flex-item-4 {
+  border: 1px solid black;
+}
+
+.flex-item-5 {
+  border: 1px solid black;
+}
+
+.flex-item-6 {
+  border: 1px solid black;
 }
