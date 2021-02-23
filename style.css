@@ -62,28 +62,58 @@
 }
 
 .flex-container {
+  height: 300px;
+  display: flex;
+  flex-direction: column-reverse;
+  /* flex-wrap allows content to wrap within the limited space */
+  flex-wrap: wrap;
+  /* justify-content: center, space-between, space-around, flex-start, flex-end */
+  justify-content: space-evenly;
+  /* vertical spacing  */
+  align-items: center;
+  /* only for multi-line flexbox containers 
+     however, not really used often 
+  align-content: space-between; */
 }
 
 .flex-item-1 {
   border: 1px solid black;
+  /* flex-item wont shrink */
+  flex-shrink: 0;
 }
 
 .flex-item-2 {
   border: 1px solid black;
+  /* flex-item will take up twice the extra space */
+  flex-grow: 2;
+  /* where to start growing from */
+  flex-basis: 0;
 }
 
 .flex-item-3 {
   border: 1px solid black;
+  align-self: center;
 }
 
 .flex-item-4 {
   border: 1px solid black;
+  /* flex-item will take up all extra space */
+  flex-grow: 1;
+  /* where to start growing from 
+     however, not used often */
+  flex-basis: 0;
+  align-self: stretch;
+  /* change order, not recommended to use 
+     as it messes the flow of screen reader */
+  order: 1;
 }
 
 .flex-item-5 {
   border: 1px solid black;
+  align-self: flex-start;
 }
 
 .flex-item-6 {
   border: 1px solid black;
+  align-self: flex-end;
 }
