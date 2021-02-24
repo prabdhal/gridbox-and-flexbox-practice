@@ -49,7 +49,7 @@ body {
   padding: 5px;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
   grid-template-rows: repeat(auto-fit, 100px);
   justify-content: stretch;
   grid-gap: 5px;
