@@ -20,10 +20,10 @@ body {
   padding: 5px;
 
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, auto));
-  grid-template-rows: repeat(2, minmax(100px, auto));
+  grid-template-columns: repeat(3, minmax(50px, auto));
+  grid-template-rows: repeat(2, minmax(150px, auto));
   justify-content: stretch;
-  grid-gap: 10px;
+  grid-gap: 5px;
 }
 
 .grid-item-1,
@@ -34,4 +34,52 @@ body {
 .grid-item-6 {
   border: 2px solid black;
   background-color: cyan;
+}
+
+.grid-container-2 {
+  border: 5px solid black;
+  background-color: white;
+  padding: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-rows: repeat(auto-fit, 100px);
+  justify-content: stretch;
+  grid-gap: 5px;
+}
+
+.grid-item-7 {
+  border: 2px solid black;
+  background-color: cyan;
+  min-height: 100px;
+}
+
+.grid-item-8 {
+  border: 2px solid black;
+  background-color: cyan;
+  min-height: 100px;
+}
+
+.grid-item-9 {
+  border: 2px solid black;
+  background-color: cyan;
+  min-height: 100px;
+}
+
+.grid-item-10 {
+  border: 2px solid black;
+  background-color: cyan;
+  min-height: 100px;
+}
+
+.grid-item-11 {
+  border: 2px solid black;
+  background-color: cyan;
+  min-height: 100px;
+}
+
+.grid-item-12 {
+  border: 2px solid black;
+  background-color: cyan;
+  min-height: 100px;
 }
