@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --firstColor: cyan;
+  --secondColor: green;
+  --thirdColor: red;
+  --fourthColor: yellow;
+}
+
+body {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ccc;
+}
+/* ################## GRID 1 ###################### */
+.grid-container-1 {
+  border: 5px solid black;
+  background-color: white;
+  padding: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, auto));
+  grid-template-rows: repeat(2, minmax(150px, auto));
+  justify-content: stretch;
+  grid-gap: 5px;
+}
+
+.grid-item-1,
+.grid-item-2,
+.grid-item-3,
+.grid-item-4,
+.grid-item-5,
+.grid-item-6 {
+  border: 2px solid black;
+  background-color: var(--firstColor);
+}
+/* ################## GRID 2 ###################### */
+.grid-container-2 {
+  border: 5px solid black;
+  background-color: white;
+  padding: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-rows: repeat(auto-fit, 100px);
+  justify-content: stretch;
+  grid-gap: 5px;
+}
+
+.grid-item-7,
+.grid-item-8,
+.grid-item-9,
+.grid-item-10,
+.grid-item-11,
+.grid-item-12 {
+  border: 2px solid black;
+  background-color: var(--secondColor);
+  min-height: 100px;
+}
+/* ################## GRID 3 ###################### */
+.grid-container-3 {
+  border: 5px solid black;
+  background-color: white;
+  padding: 5px;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100px 200px 200px;
+  grid-template-areas:
+    'header header'
+    'sidebar main'
+    'sidebar main';
+  grid-gap: 10px;
+  justify-content: stretch;
+}
+
+.grid-item-13 {
+  border: 2px solid black;
+  background-color: var(--thirdColor);
+  grid-area: header;
+}
+
+.grid-item-14 {
+  border: 2px solid black;
+  background-color: var(--thirdColor);
+  grid-area: header;
+}
+
+.grid-item-15 {
+  border: 2px solid black;
+  background-color: var(--thirdColor);
+  grid-area: sidebar;
+}
+
+.grid-item-16 {
+  border: 2px solid black;
+  background-color: var(--thirdColor);
+  grid-area: sidebar;
+}
+
+.grid-item-17 {
+  border: 2px solid black;
+  background-color: var(--thirdColor);
+  grid-area: main;
+}
+
+.grid-item-18 {
+  border: 2px solid black;
+  background-color: var(--thirdColor);
+  grid-area: main;
+}
+/* ################## GRID 4 ###################### */
+.grid-container-4 {
+  border: 5px solid black;
+  background-color: white;
+}
+
+.grid-item-19 {
+  border: 2px solid black;
+  background-color: var(--fourthColor);
+}
+
+.grid-item-20 {
+  border: 2px solid black;
+  background-color: var(--fourthColor);
+}
+
+.grid-item-21 {
+  border: 2px solid black;
+  background-color: var(--fourthColor);
+}
+
+.grid-item-22 {
+  border: 2px solid black;
+  background-color: var(--fourthColor);
+}
+
+.grid-item-23 {
+  border: 2px solid black;
+  background-color: var(--fourthColor);
+}
+
+.grid-item-24 {
+  border: 2px solid black;
+  background-color: var(--fourthColor);
+}
