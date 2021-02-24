@@ -1,119 +1,37 @@
-.grid-container {
-  display: grid;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* 1. manual grid setup */
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 75px 75px;
-
-  /* 2. repeat columns and rows */
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(2, 100px);
-
-  /* 3. repeat with minmax columns and rows */
-  grid-template-columns: repeat(3, minmax(100px, auto));
-  grid-template-rows: repeat(2, minmax(1fr, auto));
-
-  /* grid gap columns/rows/all */
-  grid-column-gap: 10px;
-  grid-row-gap: 20px;
-  grid-gap: 10px 20px;
-
-  /* content size and format */
-  /* justify-content: start, center, end, stretch, etc */
+body {
+  width: 100%;
   justify-content: center;
-  /* vertically align-items: start, center, end, stretch, etc */
   align-items: center;
+  padding: 20px;
+  background-color: #ccc;
 }
 
-/* individually align items with align-self */
-.grid-item-1 {
-  border: 1px solid black;
-  align-self: start;
+.grid-container-1 {
+  border: 5px solid black;
+  background-color: white;
+  padding: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, auto));
+  grid-template-rows: repeat(2, minmax(100px, auto));
+  justify-content: stretch;
+  grid-gap: 10px;
 }
 
-/* individually align items with align-self */
-.grid-item-2 {
-  border: 1px solid black;
-  align-self: center;
-}
-
-/* individually align items with align-self */
-.grid-item-3 {
-  border: 1px solid black;
-  align-self: end;
-}
-
-/* individually align items with align-self */
-.grid-item-4 {
-  border: 1px solid black;
-  align-self: stretch;
-}
-
-/* individually align items with align-self */
-.grid-item-5 {
-  border: 1px solid black;
-  align-self: baseline;
-}
-
-/* individually align items with align-self */
+.grid-item-1,
+.grid-item-2,
+.grid-item-3,
+.grid-item-4,
+.grid-item-5,
 .grid-item-6 {
-  border: 1px solid black;
-  align-self: end;
-}
-
-.flex-container {
-  height: 300px;
-  display: flex;
-  flex-direction: column-reverse;
-  /* flex-wrap allows content to wrap within the limited space */
-  flex-wrap: wrap;
-  /* justify-content: center, space-between, space-around, flex-start, flex-end */
-  justify-content: space-evenly;
-  /* vertical spacing  */
-  align-items: center;
-  /* only for multi-line flexbox containers 
-     however, not really used often 
-  align-content: space-between; */
-}
-
-.flex-item-1 {
-  border: 1px solid black;
-  /* flex-item wont shrink */
-  flex-shrink: 0;
-}
-
-.flex-item-2 {
-  border: 1px solid black;
-  /* flex-item will take up twice the extra space */
-  flex-grow: 2;
-  /* where to start growing from */
-  flex-basis: 0;
-}
-
-.flex-item-3 {
-  border: 1px solid black;
-  align-self: center;
-}
-
-.flex-item-4 {
-  border: 1px solid black;
-  /* flex-item will take up all extra space */
-  flex-grow: 1;
-  /* where to start growing from 
-     however, not used often */
-  flex-basis: 0;
-  align-self: stretch;
-  /* change order, not recommended to use 
-     as it messes the flow of screen reader */
-  order: 1;
-}
-
-.flex-item-5 {
-  border: 1px solid black;
-  align-self: flex-start;
-}
-
-.flex-item-6 {
-  border: 1px solid black;
-  align-self: flex-end;
+  border: 2px solid black;
+  background-color: cyan;
 }
